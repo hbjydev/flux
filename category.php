@@ -1,5 +1,9 @@
 <?php get_header(); ?>
-<h1 id="page_title">Stuff I've Written</h1>
+<?php if(is_category('Projects')) : ?>
+  <h1 id="page_title">Stuff I've Made</h1>
+<?php else : ?>
+  <h1 id="page_title">Stuff I've Written</h1>
+<?php endif; ?>
 <div id="posts_wrapper" class="skinny_wrapper">
 <?php if ( have_posts() ) : ?>
     <?php while ( have_posts() ) : the_post(); ?>

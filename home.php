@@ -25,7 +25,7 @@
     <h2>Some links for you</h2>
     <hr>
     <div id="home_navigation">
-      <?php wp_nav_menu( array( 'homepage-nav' => 'home_nav' ) ); ?>
+      <?php wp_nav_menu( array( 'theme_location' => 'home_nav' ) ); ?>
     </div>
   </div>
 </div>

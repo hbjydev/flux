@@ -30,6 +30,19 @@ Use it to make something cool, have fun, and share what you've learned with othe
   }
 }
 
+#main_footer {
+  nav {
+    margin-top: -1.5em;
+    .menu {
+      list-style: none;
+      .menu-item {
+        display: block;
+        float: right;
+      }
+    }
+  }
+}
+
 #home_navigation {
   ul {
     padding: 0;

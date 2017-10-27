@@ -1,8 +1,12 @@
 <?php
 function menureg() {
-  register_nav_menu('main_nav',__( 'Main Navigation' ));
-  register_nav_menu('social',__('Social Links Menu'));
-  register_nav_menu('home_nav',__('Homepage Links List'));
+  register_nav_menus(
+    array(
+      'header_nav' => __('Main Navigation'),
+      'home_nav' => __('Homepage Links List'),
+      'social_nav' => __('Social Icons (use font-awesome syntax)')
+    )
+  );
 }
 add_action( 'init', 'menureg' );
 
