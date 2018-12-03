@@ -14,6 +14,7 @@
     <meta name="apple-mobile-web-app-title" content="Hayden Young">
     <meta name="application-name" content="Hayden Young">
     <meta name="theme-color" content="#ffffff">
+    <?php wp_head(); ?>
   </head>
   <body>
     <header id="main_navigation" class="clearfix">
