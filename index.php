@@ -3,11 +3,12 @@
 <div id="posts_wrapper" class="skinny_wrapper">
 <?php if ( have_posts() ) : ?>
     <?php while ( have_posts() ) : the_post(); ?>
-        <div class="post">
+        <article class="post">
           <p class="date"><?php the_date(); ?></p>
           <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+          <p class="excerpt"><?php the_excerpt(); ?></p>
           <hr>
-        </div>
+        </article>
     <?php endwhile; ?>
 <?php endif; ?>
 </div>

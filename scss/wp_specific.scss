@@ -23,8 +23,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
     .menu {
       list-style: none;
       .menu-item {
-        display: block;
-        float: right;
+        display: inline;
       }
     }
   }
@@ -32,13 +31,9 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 #main_footer {
   nav {
-    margin-top: -1.5em;
-    .menu {
+    ul {
       list-style: none;
-      .menu-item {
-        display: block;
-        float: right;
-      }
+      .menu-item, .page_item { display: inline; margin-left: 16px; }
     }
   }
 }

@@ -17,7 +17,7 @@
     <?php wp_head(); ?>
   </head>
   <body>
-    <header id="main_navigation" class="clearfix">
+    <header id="main_navigation" class="clearfix" style="background-image: url(<?php echo get_stylesheet_directory_uri().'/assets/pipes.png'; ?>)">
       <a href="<?php echo site_url(); ?>" class="name"><?php bloginfo('title'); ?></a>
       <nav class="main-nav">
         <?php wp_nav_menu( array( 'theme_location' => 'header_nav' ) ); ?>

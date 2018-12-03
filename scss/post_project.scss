@@ -26,6 +26,10 @@
 
 // Posts Show
 #post_show_content {
+  .fimage {
+    width: 100%;
+    margin-bottom: 32px;
+  }
   header {
     text-align: center;
     .date {

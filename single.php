@@ -1,7 +1,16 @@
 <?php get_header(); ?>
 
-<div id="post_show_content" class="wrapper_padding skinny_wrapper">
-  <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+<article id="post_show_content" class="wrapper_padding skinny_wrapper">
+  <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); 
+    $img_id = get_post_thumbnail_id();
+    if( !empty( $img_id ) ) {
+      $img_url_array = wp_get_attachment_image_src($img_id, 'large', true);
+      $img_url = $img_url_array[0];
+    }
+  ?>
+  <?php if ( !empty( $img_url ) ) : ?>
+    <img class="fimage" src="<?php echo($img_url) ?>" alt="Featured image" />
+  <?php endif; ?>
     <header>
       <p class="date"><?php the_date(); ?></p>
       <h1><?php the_title(); ?></h1>
@@ -25,6 +34,6 @@
          comments_template();
      endif; ?>
   <?php endwhile; endif; ?>
-</div>
+</article>
 
 <?php get_footer(); ?>
