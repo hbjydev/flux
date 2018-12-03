@@ -4,7 +4,6 @@
     <meta charset="<?php bloginfo( 'charset' ); ?>">
 	  <meta name="viewport" content="width=device-width">
     <title><?php bloginfo('title'); ?></title>
-    <link href="<?php bloginfo('template_directory'); ?>/style.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
