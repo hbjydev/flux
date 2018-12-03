@@ -1,6 +1,8 @@
 # flux-theme
 A developer-friendly, Sass-powered WordPress theme by Hayden Young.
 
+![./screenshot.png](./screenshot.png)
+
 ## Features
 - [X] Sass-Powered
 - [X] User-friendly
