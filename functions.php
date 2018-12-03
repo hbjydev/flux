@@ -23,6 +23,8 @@ add_action( 'widgets_init', 'arphabet_widgets_init' );
 function scriptsAndStyles() {
 
   wp_enqueue_style( 'style', get_stylesheet_uri() );
+  wp_enqueue_script( 'jquery' );
+  wp_enqueue_script( 'buttonHandler', get_stylesheet_directory_uri() . '/assets/button.js', array('jquery') );
 
 }
 add_action( 'wp_enqueue_scripts', 'scriptsAndStyles' );
