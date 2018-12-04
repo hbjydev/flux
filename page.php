@@ -11,16 +11,16 @@
       <?php the_content(); ?>
     </div>
 
-      <hr>
+    <hr>
 
-      <div id="share_box">
-        <p>Share <?php the_title(); ?></p>
-        <a onclick="javascript:window.open('http://twitter.com/share?text=Check out <?php the_title(); ?> by @haydenbjyoung!&amp;url=<?php the_permalink(); ?>', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-twitter"></i></a>
-        <a onclick="javascript:window.open('http://facebook.com/sharer.php?u=<?php the_permalink(); ?>', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-facebook"></i></a>
-        <a onclick="javascript:window.open('http://plus.google.com/share?url=<?php the_permalink(); ?>', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-google-plus"></i></a>
-      </div>
+    <div id="share_box">
+      <p>Share <?php the_title(); ?></p>
+      <a onclick="javascript:window.open('http://twitter.com/share?text=Check out <?php the_title(); ?> by @haydenbjyoung!&amp;url=<?php the_permalink(); ?>', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-twitter"></i></a>
+      <a onclick="javascript:window.open('http://facebook.com/sharer.php?u=<?php the_permalink(); ?>', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-facebook"></i></a>
+      <a onclick="javascript:window.open('http://plus.google.com/share?url=<?php the_permalink(); ?>', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-google-plus"></i></a>
+    </div>
 
-      <hr>
+    <hr>
 
   <?php endwhile; endif; ?>
 </div>

@@ -1,6 +1,6 @@
+@import 'variables';
 @import 'normalize';
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
-@import 'variables';
 
 a {
   text-decoration: none;
@@ -42,6 +42,10 @@ body {
 
 .clearfix::after {
   clear: both;
+}
+
+li.widget {
+  list-style: none;
 }
 
 hr {

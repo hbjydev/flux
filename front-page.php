@@ -1,16 +1,16 @@
-<?php query_posts( 'posts_per_page=3' ); ?>
 <?php get_header(); ?>
 <div class="wrapper wrapper_padding clearfix">
   <div class="col-1 about homepage_content">
-    <h2>About</h2>
-    <hr>
-    <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('home_left') ) :
-
-    endif; ?>
+    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+    <h2><?php the_title(); ?></h2>
+    <hr/>
+    <div id="home_content" class="content"><?php the_content(); ?></div>
+    <?php endwhile; endif; ?>
   </div>
   <div class="col-2 homepage_content">
-    <h2>Stuff I've Written</h2>
+    <h2>Recent Articles</h2>
     <hr>
+    <?php query_posts( 'posts_per_page=5' ); ?>
     <?php
       if ( have_posts() ) {
       	while ( have_posts() ) {
@@ -22,11 +22,7 @@
       ?>
   </div>
   <div class="col-3 homepage_content">
-    <h2>Some links for you</h2>
-    <hr>
-    <div id="home_navigation">
-      <?php wp_nav_menu( array( 'theme_location' => 'home_nav' ) ); ?>
-    </div>
+    <?php dynamic_sidebar( 'github' ); ?>
   </div>
 </div>
 <?php get_footer(); ?>

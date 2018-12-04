@@ -1,24 +1,26 @@
 <?php
+
 function menureg() {
   register_nav_menus(
     array(
       'header_nav' => __('Main Navigation'),
-      'home_nav' => __('Homepage Links List'),
       'social_nav' => __('Social Icons (use font-awesome syntax)')
     )
   );
 }
 add_action( 'init', 'menureg' );
 
-function arphabet_widgets_init() {
+function widgetsInit() {
 
 	register_sidebar( array(
-		'name'          => 'Home textbox',
-		'id'            => 'home_left'
+		'name'          => 'GitHub Projects',
+    'id'            => 'github',
+    'before_title'  => '<h2>',
+    'after_title'   => '</h2><hr>'
 	) );
 
 }
-add_action( 'widgets_init', 'arphabet_widgets_init' );
+add_action( 'widgets_init', 'widgetsInit' );
 
 function scriptsAndStyles() {
 
@@ -29,4 +31,4 @@ function scriptsAndStyles() {
 }
 add_action( 'wp_enqueue_scripts', 'scriptsAndStyles' );
 
-add_theme_support('post-thumbnails'); 
+add_theme_support('post-thumbnails');
