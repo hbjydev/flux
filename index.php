@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<h1 id="page_title">Stuff I've Written</h1>
+<h1 id="page_title">Articles</h1>
 <div id="posts_wrapper" class="skinny_wrapper">
 <?php if ( have_posts() ) : ?>
     <?php while ( have_posts() ) : the_post(); ?>
